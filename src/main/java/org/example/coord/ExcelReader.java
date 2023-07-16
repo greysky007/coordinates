@@ -109,29 +109,5 @@ public class ExcelReader {
     }
 
 
-
-    /*public void getMaxBEH (){
-        XSSFWorkbook workbook = null;
-        try {
-            workbook = new XSSFWorkbook(file);
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-        Sheet target =  workbook.getSheetAt(4);
-        List<Double> values = new ArrayList<Double>();
-
-        for(Row r : target) {
-            Cell c = r.getCell(3);
-            if(c != null) {
-                if(c.getCellType() == Cell.CELL_TYPE_NUMERIC) {
-                    values.add(c.getNumericCellValue());
-                } else if(c.getCellType() == Cell.CELL_TYPE_FORMULA && c.getCachedFormulaResultType() == Cell.CELL_TYPE_NUMERIC) {
-                    values.add(c.getNumericCellValue());
-                }
-            }
-        }
-        System.out.println(values);
-    }*/
-
 }
 
